@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #47b2e4;
+  color: #582600;
   text-decoration: none;
 }
 
 a:hover {
-  color: #73c5eb;
+  color: #923f00;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
+  background: #923f00;
   color: #fff;
 }
 
@@ -192,7 +192,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #331b08;
+  color: #582600;
 }
 
 .navbar .getstarted,
@@ -202,14 +202,14 @@ h6 {
   border-radius: 50px;
   color: #fff;
   font-size: 14px;
-  border: 2px solid #331b08;
+  border: 2px solid #5c300e;
   font-weight: 600;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #331b08;
+  background: #923f00;
 }
 
 .navbar .dropdown ul {
@@ -432,7 +432,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #923f00;
 }
 
 #hero .btn-watch-video {
@@ -454,7 +454,7 @@ h6 {
 }
 
 #hero .btn-watch-video:hover i {
-  color: #47b2e4;
+  color: #923f00;
 }
 
 #hero .animated {
@@ -1795,7 +1795,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #47b2e4;
+  color: #582600;
 }
 
 #footer .footer-top .social-links a {
@@ -1814,7 +1814,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
+  background: #582600;
   color: #fff;
   text-decoration: none;
 }
