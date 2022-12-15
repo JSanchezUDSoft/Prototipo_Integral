@@ -506,11 +506,11 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="#" method="post" role="form" class="php-email-form">
+            <form action="#" method="" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-5">
                   <label for="cultivo">Tipo de cultivo</label>
-                  <select class="form-select" aria-label="Default select example" name="cultivo">
+                  <select class="form-select" aria-label="Default select example" name="cultivo" id="cultivo">
                     <option disabled selected>Seleccione una opción...</option>
                     <option value="papa">Papa</option>
                     <option value="calabaza" >Calabaza</option>
@@ -533,14 +533,10 @@
               
               <div class="form-group">
                 <label for="name">Resultados</label>
-                <textarea class="form-control" name="message" rows="10" disabled></textarea>
+                <textarea class="form-control" name="resutados" id="resultados" rows="10" disabled></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Calcular</button></div>
+              
+              <div class="text-center"><button type="submit" onclick="verResultados()">Calcular</button></div>
             </form>
           </div>
 
@@ -578,7 +574,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

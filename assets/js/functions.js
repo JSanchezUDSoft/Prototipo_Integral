@@ -1,22 +1,43 @@
 // Controlador
 
-function controlador(){
-    
+function verResultados(){
+    let seleccion=document.getElementById('cultivo');
+    let cultivo=seleccion.options[seleccion.selectedIndex].value;
+
+    let largo = document.getElementById('largo').value;
+    let ancho = document.getElementById('ancho').value;
+
+    console.log(cultivo+" "+ largo + " "+ancho);
+     let respuesta = resultado(cultivo,largo,ancho);
+
+     console.log(respuesta);
+
+     document.getElementById('resultados').innerHTML = respuesta;
 }
 
-function disSurcos(cultivo, largo, ancho) {
+
+// Logica
+function cultivosxSurco(ancho, disPlanta){
+   return ancho*disPlanta;
+}
+
+function numCultivos(area, disPlanta){
+    return (area*disPlanta)/2;
+}
+
+function resultado(cultivo, largo, ancho) {
     let disSurcos = 0;
     let disPlanta = 0;
-    let area = area(largo,ancho);
+    let area = largo*ancho;
     let numSurcos = largo/2;
     let respuesta = `Cultivo de ${cultivo}:\n`;
     let totalCultivos= 0;
-    let cultivosxSurco=0;
+    let cultivoxSurco=0;
     
     if (cultivo == "papa") {
         disPlanta = 0.25;
         disSurcos = 1;
-        cultivosxSurco = cultivosxSurco(ancho,disPlanta);
+        cultivoxSurco = cultivosxSurco(ancho,disPlanta);
         totalCultivos = numCultivos(area,disPlanta);
 
         respuesta+= "papa";
@@ -55,19 +76,3 @@ function disSurcos(cultivo, largo, ancho) {
 
     return respuesta;
 }
-
-// Logica
-
-function area(largo, ancho){
-    return largo*ancho;
-}
-
-function cultivosxSurco(ancho, disPlanta){
-   return ancho*disPlanta;
-}
-
-function numCultivos(area, disPlanta){
-    return (area*disPlanta)/2;
-}
-
-
