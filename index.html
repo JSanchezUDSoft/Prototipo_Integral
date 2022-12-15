@@ -28,6 +28,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- File with Project Functions  -->
+  <script src="assets/js/functions.js"></script>
+
   <!-- =======================================================
   * Template Name: Arsha - v4.9.1
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -503,22 +506,30 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Tipo de cultivo</label>
-                  <select class="form-select" aria-label="Default select example">
+                <div class="form-group col-md-5">
+                  <label for="cultivo">Tipo de cultivo</label>
+                  <select class="form-select" aria-label="Default select example" name="cultivo">
+                    <option disabled selected>Seleccione una opción...</option>
                     <option value="papa">Papa</option>
-                    <option value="calabaza" selected>Calabaza</option>
+                    <option value="calabaza" >Calabaza</option>
                     <option value="frijol">Frijol</option>
                     <option value="mazorca">Mazorca</option>
+                    <option value="arveja">Arveja</option>
                   </select>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Area a cultivar (metros)</label>
-                  <input type="number" class="form-control" name="email" id="email" step="any" required>
+                <div class="form-group col-md-3">
+                  <label for="ancho">Ancho  del area a cultivar (metros)</label>
+                  <input type="number" class="form-control" name="ancho" id="ancho" step="any" required>
                 </div>
-              </div>
+            
+                <div class="form-group col-md-3">
+                  <label for="largo">Largo del area a cultivar (metros)</label>
+                  <input type="number" class="form-control" name="largo" id="largo" step="any" required>
+                </div>
+          
+              
               
               <div class="form-group">
                 <label for="name">Resultados</label>
